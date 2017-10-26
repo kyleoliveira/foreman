@@ -12,4 +12,4 @@ setuid <%= user %>
 
 chdir <%= engine.root %>
 
-exec <%= process.command %>
+exec /bin/sh -c '<%= process.command %>' 
